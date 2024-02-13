@@ -1,0 +1,3 @@
+[submodule "3rdparty/qt-docker-cli-ui"]
+	path = 3rdparty/qt-docker-cli-ui
+	url = git@github.com:flaviomarcio/qt-docker-cli-ui.git
