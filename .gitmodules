@@ -1,3 +1,9 @@
-[submodule "3rdparty/qt-docker-cli-ui"]
-	path = 3rdparty/qt-docker-cli-ui
-	url = git@github.com:flaviomarcio/qt-docker-cli-ui.git
+[submodule "3rdparty/qmfe"]
+	path = 3rdparty/qmfe
+	url = git@github.com:flaviomarcio/qmfe.git
+[submodule "3rdparty/qtinyaes"]
+	path = 3rdparty/qtinyaes
+	url = git@github.com:flaviomarcio/qtinyaes.git
+[submodule "3rdparty/qt-docker-cli-lib"]
+	path = 3rdparty/qt-docker-cli-lib
+	url = git@github.com:flaviomarcio/qt-docker-cli-lib.git

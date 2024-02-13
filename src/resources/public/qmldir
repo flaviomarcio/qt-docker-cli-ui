@@ -1,0 +1,4 @@
+module ERPPublic
+
+QMFEResourceInit 1.0 QMFEResourceInit.qml
+CustomerConsts 1.0 CustomerConsts.qml
