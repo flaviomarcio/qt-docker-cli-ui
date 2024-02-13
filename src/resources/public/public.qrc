@@ -1,14 +1,16 @@
 <RCC>
     <qresource prefix="/">
         <file>application.json</file>
+        <file>main.qml</file>
     </qresource>
     <qresource prefix="/Customer/Images">
         <file>logo-large.png</file>
         <file>logo-small.png</file>
     </qresource>
     <qresource prefix="/Customer">
-        <file>QMFEResourceInit.qml</file>
         <file>qmldir</file>
-        <file>CustomerConsts.qml</file>
+        <file>DockerHome.qml</file>
+        <file>DockerListItem.qml</file>
+        <file>DockerDashBoard.qml</file>
     </qresource>
 </RCC>

@@ -1,4 +1,3 @@
-module ERPPublic
+module DockerUI
 
-QMFEResourceInit 1.0 QMFEResourceInit.qml
-CustomerConsts 1.0 CustomerConsts.qml
+DockerHome 1.0 DockerHome.qml
