@@ -14,7 +14,12 @@ CONFIG+=silent
 include($$PWD/../3rdparty/qt-docker-cli-lib/qt-docker-cli.pri)
 include($$PWD/../3rdparty/qmfe/qmfe-frontend.pri)
 
-SOURCES += main.cpp
+HEADERS += \
+    app_qml_register.h
+
+SOURCES += \
+    main.cpp \
+    app_qml_register.cpp
 
 RESOURCES += \
     $$PWD/resources/public/public.qrc \

@@ -1,5 +1,6 @@
 #ifdef QMFE_MODULE
-    #include <QMfe>
+#include <QMfe>
+#include <QCoreApplication>
     QMFE_CONSOLE_MAIN(qrc:/main.qml)//
 #else
     #include <QGuiApplication>
