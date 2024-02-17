@@ -15,9 +15,11 @@ include($$PWD/../3rdparty/qt-docker-cli-lib/qt-docker-cli.pri)
 include($$PWD/../3rdparty/qmfe/qmfe-frontend.pri)
 
 HEADERS += \
+    app_qml_models.h \
     app_qml_register.h
 
 SOURCES += \
+    app_qml_models.cpp \
     main.cpp \
     app_qml_register.cpp
 

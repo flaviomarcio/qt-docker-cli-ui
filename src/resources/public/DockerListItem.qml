@@ -12,13 +12,15 @@ QMFEPage {
     id: control
     title: qsTr("DockerListItem.qml")
 
+    property QMFEObjectModel model
+
     signal refresh()
 
     ColumnLayout{
         anchors.fill: parent
         QMFETitleBox{
             Layout.fillWidth: true
-            text: control.title
+            text: (control.model===undefined || control.model===null)?"":control.model.display
         }
         ColumnLayout{
             Layout.fillWidth: true

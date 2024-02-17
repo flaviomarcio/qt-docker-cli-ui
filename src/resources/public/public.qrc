@@ -12,5 +12,8 @@
         <file>DockerHome.qml</file>
         <file>DockerListItem.qml</file>
         <file>DockerDashBoard.qml</file>
+        <file>DockerServers.qml</file>
+        <file>DockerSession.qml</file>
+        <file>DockerSessions.qml</file>
     </qresource>
 </RCC>

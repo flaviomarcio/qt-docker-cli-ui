@@ -1,4 +1,5 @@
 #include "./app_qml_register.h"
+#include "./app_qml_models.h"
 #include <QLocale>
 #include <QMfe>
 #include <QtDockerCli>
@@ -23,9 +24,6 @@ namespace DockerUI {
 #define Q_UI_QML_REGISTER_NAME(NAME)\
     engine.rootContext()->setContextProperty(#NAME, &object);
 
-Q_GLOBAL_STATIC(QtDockerCli::Instance, dockerInstance)
-
-
 ObjectRegister::ObjectRegister(QObject *parent):QMFE::Register{parent}
 {
 
@@ -35,7 +33,7 @@ void ObjectRegister::objectRegister(QQmlApplicationEngine &engine)
 {
     Q_UNUSED(engine)
 
-    {//basic class
+    {//docker classes
         Q_UI_QML_REGISTER_CLASS(QtDockerCli::Container, DockerContainer);
         Q_UI_QML_REGISTER_CLASS(QtDockerCli::Deploy, DockerDeploy);
         Q_UI_QML_REGISTER_CLASS(QtDockerCli::Image, DockerImage);
@@ -54,7 +52,9 @@ void ObjectRegister::objectRegister(QQmlApplicationEngine &engine)
         Q_UI_QML_REGISTER_CLASS(QtDockerCli::Volume, DockerVolume);
     }
 
-    engine.rootContext()->setContextProperty("dockerInstance", dockerInstance);
+    {//app
+        Q_UI_QML_REGISTER_CLASS(DockerUI::DockerModels, DockerModels);
+    }
 }
 
 
